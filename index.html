@@ -3,39 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <img class="img-logo" src="./images/logo.png" alt="" />
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li>Home</li>
-          <li>Products</li>
-          <li>Payment</li>
-          <li>Shipping</li>
-        </ul>
-
-        <div class="search-container">
-          <input
-            type="search"
-            class="search"
-            id="search"
-            placeholder="search"
-          />
-          <button type="search-btn" class="search-btn">
-            <img class="img-search" src="./images/search.png" alt="" />
-          </button>
-            <button class="basket">
-              <div class="number
-              ">4</div>
-              <img class="basket-img" src="./images/basket.png" alt="" />
-            </button>
-          </div>
-        </div>
-      </nav>
+      <div class="col-3">
+        <div class="logo"></div>
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <div class="col-6">
+          <ul class="menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Payment</a>
+            <ul class="submenu"></ul>
+          <li>Lorem ipsum dolor</li>
+          <li>Sit Amet</li>
+          <li>Consectetur adipisicing</li>
+          <li>tempor incididunt</li>
+          <li>Dolore magna aliqua</li>
+          <li>Ud enim ad minim veriam</li>
+          <li>Quis nostrud</li></li>
+            <li><a href="">Shipping</a></li>
+          </ul>
+      </div>
+      <div class="col-3"></div>
     </header>
   </body>
 </html>
