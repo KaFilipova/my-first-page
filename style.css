@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(./images/patt.png);
+}
 .col-1 {
   flex: 0 0 8.33333%;
   max-width: 8.33333%;
@@ -45,15 +49,130 @@
   flex: 0 0 100%;
   max-width: 100%;
 }
+.container {
+  width: 1200px;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100px;
   background-color: rgba(255, 255, 255, 0.75);
 }
 .menu {
   display: flex;
+  /* position: relative; */
 }
-.submenu {
+.submenu-item {
   display: none;
+}
+.menu > li {
+  width: 25%;
+  height: 50px;
+  font-size: 21px;
+  border-right: 1px solid #2c71b8;
+}
+.menu > li > a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  align-items: center;
+  color: #2c71b8;
+}
+.menu li:first-child {
+  border-left: 1px solid #2c71b8;
+}
+.menu a:hover {
+  background-color: #2c71b8;
+  color: white;
+}
+.menu > li:hover .submenu-item {
+  display: block;
+  background-color: #2c71b8;
+  width: 290px;
+  color: white;
+}
+.submenu-item > li {
+  display: block;
+  width: 200%;
+  height: 30px;
+  cursor: pointer;
+}
+.submenu-item > li:hover {
+  background-color: white;
+  color: #2c71b8;
+}
+.two-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search-form {
+  width: 200px;
+  display: flex;
+  border: 1px solid #2c71b8;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin: 0 15px;
+}
+.input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 160px;
+  height: 50px;
+  cursor: pointer;
+}
+.input::placeholder {
+  padding: 20px 15px;
+  color: #2c71b8;
+  font-size: 18px;
+  /* border: none; */
+}
+.input:focus {
+  outline: none;
+  padding: 20px 15px;
+}
+.btn-search {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #2c71b8;
+  border: none;
+  margin: 4px 5px;
+}
+.img-search {
+  width: 100%;
+  height: auto;
+}
+.btn-search:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.btn-basket {
+  border: none;
+  cursor: pointer;
+}
+.button-container {
+  position: relative;
+}
+.round {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #2c71b8;
+  color: white;
+  border-radius: 50%;
+  top: -15px;
+  left: -10px;
+}
+.btn-basket:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
